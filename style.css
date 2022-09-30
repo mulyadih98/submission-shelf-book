@@ -1,0 +1,152 @@
+* {
+	padding: 0px;
+	margin: 0px;
+	box-sizing: border-box;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+nav {
+	padding: 10px 0px;
+}
+
+footer {
+	padding: 10px 0px;
+	text-align: center;
+}
+
+main {
+	min-height: 700px;
+}
+
+.form {
+	margin: 10px 0px;
+	border: 1px solid #ccc;
+	padding: 15px;
+	border-radius:10px;
+}
+
+.form-input > * {
+	margin: 10px 5px;
+}
+
+.form-input input[type="text"], input[type="number"] {
+	display: block;
+	border: none;
+	padding: 5px 10px;
+	border-radius: 10px;
+	background: #eee;
+	width: 100%;
+	color: #2C3333;
+}
+
+.form-input input[type="text"]:focus, input[type="number"]:focus {
+	outline-color: #EF5B0C;
+}
+
+.form-input input[type="checkbox"] {
+	line-height: 0.5;
+}
+
+.container {
+	width: 90%;
+	margin: 0 auto;
+	box-sizing: border-box;
+}
+
+.readed {
+		background: blue;
+		width: 50%;
+		height:200px;
+}
+
+.unread {
+		background: yellow;
+		width: 50%;
+		height:200px;
+}
+
+
+.book-shelf {
+	margin-top: 10px;
+	display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: repeat(2, 1fr);
+	grid-gap:  20px;
+}
+
+.shelf h3 {
+	text-align: center;
+	text-decoration: underline;
+}
+
+#readed > *, #unread > * {
+	margin: 10px;
+}
+
+.btn {
+	background: none;
+	border:none;
+	border-radius: 10px;
+	padding: 5px 10px;
+}
+
+.full {
+	width:100%;
+}
+
+.bg-red {
+	color: white;
+	background: #CC3636;
+}
+
+.bg-green {
+	color: white;
+	background: #367E18;
+}
+
+.bg-blue {
+	color: white;
+	background-color: #277BC0;
+}
+
+.bg-gray {
+	color: #D8D8D8;
+	background-color: #277BC0;
+}
+
+.card {
+	border: 1px solid #ccc;
+	padding: 10px 10px;
+	border-radius: 5px;
+}
+
+#search {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	align-content: center;
+}
+
+#search div {
+	display: flex;
+	align-items: center;
+	align-content: space-between;
+}
+
+#input-search{
+	padding: 8px 10px;
+	border-radius: 10px;
+	border: none;
+	background: #eee;
+}
+
+.btn-search {
+	padding: 8px 10px;
+	margin-left: 5px;
+}
+
+@media only screen and (max-width: 720px) {
+  .book-shelf {
+	grid-template-columns: repeat(1,1fr);
+  }
+}

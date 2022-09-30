@@ -1,0 +1,59 @@
+<html>
+<head>
+	<title>Book Shelf</title>
+	<link rel="stylesheet" type="text/css" href="./style.css" />
+</head>
+<body>
+	<nav class="bg-green">
+		<div class="container">
+			<h1>Book Shelf</h1>
+		</div>
+	</nav>
+	<main>
+		<div class="container">
+			<form class="form">
+				<div class="form-input">
+					<label for="judul">Judul</label>
+					<input required autocomplete="off" type="text" name="judul" id="judul" placeholder="Tuliskan judul buku" />
+				</div>
+				<div class="form-input">
+					<label for="penulis">Penulis</label>
+					<input required autocomplete="off" type="text" name="penulis" id="penulis" placeholder="Tuliskan penulis buku" />
+				</div>
+				<div class="form-input">
+					<label for="tahun">Tahun</label>
+					<input required type="number" name="tahun" id="tahun" placeholder="Tuliskan tahun terbit buku" />
+				</div>
+				<div class="form-input">
+					<input type="checkbox" name="read" id="read" />
+					<label for="read">Sudah dibaca</label>
+				</div>
+				<button type="submit" class="btn bg-green full"> Simpan </button>
+			</form>
+			<h2 style="text-align: center;">Book Shelf</h2>
+			<form class="form" id="search">
+				<div>
+					<input type="text" name="search" id="input-search" placeholder="ketikan judul buku">
+					<button class="btn bg-blue btn-search">Q</button>
+				</div>
+			</form>
+			<div class="book-shelf">
+				<div class="shelf" >
+					<h3>Sudah selesai dibaca</h3>
+					<div id="readed"></div>
+				</div>
+				<div class="shelf">
+					<h3>Belum selesai dibaca</h3>
+					<div id="unread"></div>
+				</div>
+			</div>
+		</div>
+	</main>
+	<footer class="bg-green">
+		<div class="container">
+			<p>Created by eMul</p>
+		</div>
+	</footer>
+	<script src="main.js"></script>
+</body>
+</html>
